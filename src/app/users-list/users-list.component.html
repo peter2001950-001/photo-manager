@@ -1,0 +1,5 @@
+<ul *ngIf="users">
+    <li *ngFor="let user of users" (click)="selectUser(user)" [class.selected]="user===selectedUser">{{user.name}}</li>
+</ul>
+
+<button (click)='loadUsers()'>Load Users</button>

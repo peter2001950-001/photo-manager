@@ -1,0 +1,9 @@
+<div class="main">
+    <div class="left-side">
+      <app-users-list (selectedUser)="newSelectedUser($event)"></app-users-list>
+    </div>
+     <div class="right-side">
+       <app-user></app-user>
+       <app-albums-list (userId)="selectedUser.id"></app-albums-list>
+     </div>
+  </div>

@@ -1,0 +1,8 @@
+<div id="card" *ngIf="selectedUser">
+ <h2>{{selectedUser.name}}</h2>
+  <p>Username: {{selectedUser.username}}.</p>
+  <p>Website: {{selectedUser.website}}</p>
+  <p>Company: {{selectedUser.company.name}}</p>
+  <span class="left bottom">tel: {{selectedUser.phone}}</span>
+  <span class="right bottom">adress: {{selectedUser.address.street}}, {{selectedUser.address.city}}, {{selectedUser.address.zipcode}}</span>
+</div>
